@@ -1,0 +1,61 @@
+from django.db import models
+
+# Create your models here.
+from ckeditor.fields import RichTextField
+from django.utils import timezone
+
+from django.contrib.auth.models import User
+from django.db import models
+
+# Create your models here.
+# 设计"表格结构" 就像Excel的表头设计
+
+# class BaseModel(models.Model):
+#     created_at = models.DateTimeField(auto_now=True, null=True)
+#     updated_at = models.DateTimeField(auto_now_add=True, null=True)
+#     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
+#     updated_by = models.ForeignKey(User, on_delete=models.CASCADE)
+
+# 分类表
+class Category(models.Model):
+    name = models.CharField(max_length=100)
+    # ↑ 分类名
+
+    def __str__(self):
+        return self.name
+
+class Post(models.Model):
+    title = models.CharField(max_length=200)
+    header_image = models.ImageField(upload_to='images/', blank=True, null=True)
+    title_tag = models.CharField(max_length=200)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    body = RichTextField()
+    post_date = models.DateTimeField(auto_now_add=True)
+    snippet = models.CharField(max_length=100)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    likes = models.ManyToManyField(User, related_name='likes', blank=True)
+
+    def __str__(self):
+        return self.title
+
+    def published_time(self):
+        db_time = self.post_date
+        now = timezone.now()
+        seconds = abs(now - db_time).total_seconds()
+        return seconds
+
+class Comment(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    body = models.TextField()
+
+    def __str__(self):
+        return self.post.title + ' - ' + self.body
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    bio = models.TextField()
+    profile_pic = models.ImageField(upload_to='images/profile/',
+                                    blank=True, null=True)
+    website = models.URLField(blank=True, null=True)
+    github = models.URLField(blank=True, null=True)
