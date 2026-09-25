@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87b50e51-d67f-4a84-90e5-91347f9e81f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/permissions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+    <list default="true" id="87b50e51-d67f-4a84-90e5-91347f9e81f5" name="Changes" comment="permission , viewsets actions">
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/viewsets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonapi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonapi/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonapi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonapi/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,61 +37,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.6443407234449506E-43" />
-      <entry key="MS500" value="3.0511494898217903E-9" />
-      <entry key="S2" value="0.007540980387385118" />
-      <entry key="S5" value="0.1850569457261485" />
-      <entry key="S10" value="0.7423115788558827" />
-      <entry key="S30" value="2.8159582786083797" />
-      <entry key="S60" value="5.527275206285707" />
-      <entry key="M2" value="11.306405862862837" />
-      <entry key="M5" value="30.46327041855864" />
-      <entry key="M10" value="54.6502214554319" />
-      <entry key="M15" value="74.91298561762058" />
-      <entry key="M30" value="138.13770497319334" />
-      <entry key="H1" value="260.8974626980886" />
-      <entry key="H2" value="444.2396025123821" />
-      <entry key="H4" value="642.9608709895035" />
-      <entry key="D1" value="942.6101764205634" />
-      <entry key="W1" value="1014.2974945362058" />
+      <entry key="MS100" value="1.548389458093252" />
+      <entry key="MS500" value="3.8083065627551282" />
+      <entry key="S2" value="9.78727795357229" />
+      <entry key="S5" value="16.337790565453655" />
+      <entry key="S10" value="21.04824047824252" />
+      <entry key="S30" value="25.887556952099658" />
+      <entry key="S60" value="27.86308014807049" />
+      <entry key="M2" value="30.22707544835072" />
+      <entry key="M5" value="36.825774270863555" />
+      <entry key="M10" value="53.36378621020095" />
+      <entry key="M15" value="71.8293581795825" />
+      <entry key="M30" value="132.3053450146184" />
+      <entry key="H1" value="254.15339272687032" />
+      <entry key="H2" value="442.56081195505107" />
+      <entry key="H4" value="651.637084536893" />
+      <entry key="D1" value="973.315646106115" />
+      <entry key="W1" value="1051.1726705043418" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000000718352497" />
-      <entry key="S60" value="1.0002681829230198" />
-      <entry key="M2" value="1.0167751708775186" />
-      <entry key="M5" value="1.2436890445344742" />
-      <entry key="M10" value="1.7669351104840756" />
-      <entry key="M15" value="2.2493305528282717" />
-      <entry key="M30" value="3.42722289521826" />
-      <entry key="H1" value="5.472524788784301" />
-      <entry key="H2" value="8.751841714365312" />
-      <entry key="H4" value="12.506333602634735" />
-      <entry key="D1" value="18.33781153879207" />
-      <entry key="W1" value="19.749408969100827" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="4.003641579103831E-93" />
+      <entry key="S2" value="7.95926712734146E-24" />
+      <entry key="S5" value="6.053245792355102E-10" />
+      <entry key="S10" value="2.943195153684879E-5" />
+      <entry key="S30" value="0.0464269461829347" />
+      <entry key="S60" value="0.30245101520069695" />
+      <entry key="M2" value="0.7801004758180945" />
+      <entry key="M5" value="1.5026388797876118" />
+      <entry key="M10" value="2.2336818097684836" />
+      <entry key="M15" value="2.831728290926236" />
+      <entry key="M30" value="4.240409093173548" />
+      <entry key="H1" value="6.4818027188291785" />
+      <entry key="H2" value="9.94355733611063" />
+      <entry key="H4" value="13.922582589658306" />
+      <entry key="D1" value="20.193666854033623" />
+      <entry key="W1" value="21.727188128231838" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.948805091469716E-26" />
-      <entry key="MS500" value="7.833019605434502E-6" />
-      <entry key="S2" value="0.05304167881212258" />
-      <entry key="S5" value="0.3673669520542078" />
-      <entry key="S10" value="1.0392880144176355" />
-      <entry key="S30" value="3.3927401913517437" />
-      <entry key="S60" value="6.26074285554197" />
-      <entry key="M2" value="12.164314044973601" />
-      <entry key="M5" value="31.627461784041476" />
-      <entry key="M10" value="56.36517400074783" />
-      <entry key="M15" value="77.11891602114488" />
-      <entry key="M30" value="141.5295149005629" />
-      <entry key="H1" value="266.3391517304769" />
-      <entry key="H2" value="452.9656914198076" />
-      <entry key="H4" value="655.4484467272141" />
-      <entry key="D1" value="960.9433315574087" />
-      <entry key="W1" value="1034.0461851341613" />
+      <entry key="MS100" value="1.4552928552122435" />
+      <entry key="MS500" value="3.7553458074511643" />
+      <entry key="S2" value="9.744896697469969" />
+      <entry key="S5" value="16.307715050674734" />
+      <entry key="S10" value="21.028719663860674" />
+      <entry key="S30" value="25.91919285809832" />
+      <entry key="S60" value="28.137586431085914" />
+      <entry key="M2" value="30.971783845183626" />
+      <entry key="M5" value="38.29444579408884" />
+      <entry key="M10" value="55.56475215857028" />
+      <entry key="M15" value="74.62923571942655" />
+      <entry key="M30" value="136.51531324111366" />
+      <entry key="H1" value="260.60646884808" />
+      <entry key="H2" value="452.47931301518247" />
+      <entry key="H4" value="665.5409592078936" />
+      <entry key="D1" value="993.5045578190208" />
+      <entry key="W1" value="1072.899121792302" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -177,9 +168,22 @@
       <updated>1789367178685</updated>
       <workItem from="1789367179721" duration="8383000" />
     </task>
+    <task id="LOCAL-00001" summary="permission , viewsets actions">
+      <option name="closed" value="true" />
+      <created>1790312770045</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1790312770045</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="permission , viewsets actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="permission , viewsets actions" />
   </component>
 </project>
