@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87b50e51-d67f-4a84-90e5-91347f9e81f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/viewsets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PythonAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonAPI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/permissions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/viewsets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonapi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonapi/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pythonapi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonapi/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,104 +32,107 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "934192776"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;934192776&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/934192776/PythonAPI.git",
-    "accountId": "d7b514df-edc7-4f78-9a1f-42f24d5b01ef"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/934192776/PythonAPI.git&quot;,
+    &quot;accountId&quot;: &quot;d7b514df-edc7-4f78-9a1f-42f24d5b01ef&quot;
   }
-}]]></component>
+}</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000000000115291" />
-      <entry key="S2" value="1.0032767924234167" />
-      <entry key="S5" value="1.101433093631751" />
-      <entry key="S10" value="1.3187620610865571" />
-      <entry key="S30" value="1.8661466066218675" />
-      <entry key="S60" value="2.8346924922233114" />
-      <entry key="M2" value="4.818382602122485" />
-      <entry key="M5" value="10.037305361687084" />
-      <entry key="M10" value="17.113899894253834" />
-      <entry key="M15" value="26.729855715930942" />
-      <entry key="M30" value="68.08162029784673" />
-      <entry key="H1" value="137.58533295431602" />
-      <entry key="H2" value="205.69290533761227" />
-      <entry key="H4" value="254.15794168953815" />
-      <entry key="D1" value="304.6113114077402" />
-      <entry key="W1" value="314.34429241477875" />
+      <entry key="MS100" value="2.6443407234449506E-43" />
+      <entry key="MS500" value="3.0511494898217903E-9" />
+      <entry key="S2" value="0.007540980387385118" />
+      <entry key="S5" value="0.1850569457261485" />
+      <entry key="S10" value="0.7423115788558827" />
+      <entry key="S30" value="2.8159582786083797" />
+      <entry key="S60" value="5.527275206285707" />
+      <entry key="M2" value="11.306405862862837" />
+      <entry key="M5" value="30.46327041855864" />
+      <entry key="M10" value="54.6502214554319" />
+      <entry key="M15" value="74.91298561762058" />
+      <entry key="M30" value="138.13770497319334" />
+      <entry key="H1" value="260.8974626980886" />
+      <entry key="H2" value="444.2396025123821" />
+      <entry key="H4" value="642.9608709895035" />
+      <entry key="D1" value="942.6101764205634" />
+      <entry key="W1" value="1014.2974945362058" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="7.54485774564E-313" />
-      <entry key="S2" value="9.319932435161724E-79" />
-      <entry key="S5" value="6.134301329082806E-32" />
-      <entry key="S10" value="2.476752173529439E-16" />
-      <entry key="S30" value="6.280017456313334E-6" />
-      <entry key="S60" value="0.0025059963125642977" />
-      <entry key="M2" value="0.05006345650548887" />
-      <entry key="M5" value="0.30891704094371947" />
-      <entry key="M10" value="0.6584878607572958" />
-      <entry key="M15" value="0.9885579606875242" />
-      <entry key="M30" value="1.9820233864699686" />
-      <entry key="H1" value="3.4284962927219533" />
-      <entry key="H2" value="4.799451409341271" />
-      <entry key="H4" value="5.767496646464781" />
-      <entry key="D1" value="6.773111535493084" />
-      <entry key="W1" value="6.967015345849187" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000718352497" />
+      <entry key="S60" value="1.0002681829230198" />
+      <entry key="M2" value="1.0167751708775186" />
+      <entry key="M5" value="1.2436890445344742" />
+      <entry key="M10" value="1.7669351104840756" />
+      <entry key="M15" value="2.2493305528282717" />
+      <entry key="M30" value="3.42722289521826" />
+      <entry key="H1" value="5.472524788784301" />
+      <entry key="H2" value="8.751841714365312" />
+      <entry key="H4" value="12.506333602634735" />
+      <entry key="D1" value="18.33781153879207" />
+      <entry key="W1" value="19.749408969100827" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="8.382338916426947E-9" />
-      <entry key="MS500" value="0.02424783920071323" />
-      <entry key="S2" value="0.3960765638748922" />
-      <entry key="S5" value="0.762929989654243" />
-      <entry key="S10" value="1.1017304066993963" />
-      <entry key="S30" value="1.7664942314406136" />
-      <entry key="S60" value="2.7739063511574744" />
-      <entry key="M2" value="4.8229220857252795" />
-      <entry key="M5" value="10.308943237838495" />
-      <entry key="M10" value="17.740501786028666" />
-      <entry key="M15" value="27.688974623458243" />
-      <entry key="M30" value="70.03682056368669" />
-      <entry key="H1" value="140.99136701558382" />
-      <entry key="H2" value="210.47668782872992" />
-      <entry key="H4" value="259.91600143284705" />
-      <entry key="D1" value="311.382568309034" />
-      <entry key="W1" value="321.3110349838309" />
+      <entry key="MS100" value="2.948805091469716E-26" />
+      <entry key="MS500" value="7.833019605434502E-6" />
+      <entry key="S2" value="0.05304167881212258" />
+      <entry key="S5" value="0.3673669520542078" />
+      <entry key="S10" value="1.0392880144176355" />
+      <entry key="S30" value="3.3927401913517437" />
+      <entry key="S60" value="6.26074285554197" />
+      <entry key="M2" value="12.164314044973601" />
+      <entry key="M5" value="31.627461784041476" />
+      <entry key="M10" value="56.36517400074783" />
+      <entry key="M15" value="77.11891602114488" />
+      <entry key="M30" value="141.5295149005629" />
+      <entry key="H1" value="266.3391517304769" />
+      <entry key="H2" value="452.9656914198076" />
+      <entry key="H4" value="655.4484467272141" />
+      <entry key="D1" value="960.9433315574087" />
+      <entry key="W1" value="1034.0461851341613" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3JJ7B5T2O3UqqPb7bpjiKTvsDPU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.settings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="PythonAPI" type="Python.DjangoServer" factoryName="Django server">
       <module name="PythonAPI" />
@@ -174,7 +175,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1789367178685</updated>
-      <workItem from="1789367179721" duration="7132000" />
+      <workItem from="1789367179721" duration="8383000" />
     </task>
     <servers />
   </component>

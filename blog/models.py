@@ -19,10 +19,11 @@ from django.db import models
 # 分类表
 class Category(models.Model):
     name = models.CharField(max_length=100)
-    # ↑ 分类名
+    description = models.TextField(blank=True, null=True)
 
     def __str__(self):
         return self.name
+    # ↑ 分类名
 
 class Post(models.Model):
     title = models.CharField(max_length=200)
